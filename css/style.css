@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Slab&display=fallback');
+
+/* https://milligram.io/ */
+/* Mobile First Media Queries */
+
+/* Base style */
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  background-color: gold;
+}
+
+
+/* Larger than mobile screen (tablet) 40rem = 640px */
+@media (min-width: 40.0rem) {}
+
+/* Larger than tablet screen (desktop) 80rem = 1280px */
+@media (min-width: 80.0rem) { }
+

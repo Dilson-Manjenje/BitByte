@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* BASE STYLES */
 :root {
@@ -10,6 +10,7 @@
   --color-body: #918ca4;
 }
 
+/* TYPOGRAPHY */
 html {
   font-size: 62.5%;
 }
@@ -21,7 +22,6 @@ body {
   color: var(--color-body);
 }
 
-/* TYPOGRAPHY */
 h1, 
 h2, 
 h3 {
@@ -62,3 +62,129 @@ p {
     font-size: 2.4rem;
   }
 }
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: '-->';
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* BADGES */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap; /*always on a single line*/
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* LISTS */
+.list {
+  list-style: none;  
+  padding-left: 0; /* default applied by browser*/
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block; /* to allow apply margins*/
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/icons/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;  
+  }
+  
+}
+
+/* ICONS */
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary); /*property only apply to svg images*/
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex; /* to center the container*/
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

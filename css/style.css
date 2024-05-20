@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* BASE STYLES */
@@ -8,6 +7,14 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border:  #CCC;;
+  --border-radius: 30px;
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
 }
 
 /* TYPOGRAPHY */
@@ -177,14 +184,112 @@ a {
   align-items: center;
 }
 
+/* BUTTONS */
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+
+} 
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/*FIXME: add variable --lighten-color-primary*/
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  color: #fff;
+  background: var(--color-headings);
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* INPUTS */
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
 
 
+::placeholder {
+  color: #cdcbd7;
+}
 
 
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+  /* justify-content: space-between; */
 
+}
 
+    /*using nesting to remove input border*/
+.input-group .input {
+  border: 0;
+  flex-grow: 1; /*grow the input */
+  padding: 1.5rem 1rem;
+}
 
+.input-group .btn {
+  margin: 4px;
+}
 
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
 
 
 

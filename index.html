@@ -9,17 +9,70 @@
   <link rel="stylesheet" href="css/style.css">
   <title>BitByte</title>
 </head>
-<body>
-  <div class="input-group">
-    <span class="icon-container">
-      <svg class="icon icon--primary">
-        <use xlink:href="images/sprite.svg#wordpress"></use>
-      </svg>
-    </span>
-    <input type="text"
-           class="input" 
-           placeholder="Enter your domain name..." />
-    <button class="btn btn--accent">Search</button>
+<body>  
+    <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Individual</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">5% OFF</span>
+            <spa class="plan__description">Easy start on the cloud</spa>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="plan plan--popular">
+      <div class="card card--primary">
+        <header class="card__header">
+          <h3 class="plan__name">Business</h3>
+          <span class="plan__price">$25</span>
+          <span class="plan__billing-cycle">/month</span>
+          <span class="badge badge--primary badge--small">10% OFF</span>
+          <spa class="plan__description">Optimal cloud experience</spa>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">Unlimited Websites</li>
+            <li class="list__item">Unlimited Bandwidth</li>
+            <li class="list__item">100 GB SSD Storage</li>
+            <li class="list__item">3 GB RAM</li>
+            <li class="list__item">2 CPU Core</li>
+          </ul>
+          <button class="btn btn--popular btn--block">Buy Now</button>
+        </div>
+      </div>
+  </div>
+
+  <div class="plan">
+    <div class="card card--secondary">
+      <header class="card__header">
+        <h3 class="plan__name">Bussiness Plus</h3>
+        <span class="plan__price">$50</span>
+        <span class="plan__billing-cycle">/month</span>
+        <span class="badge badge--secondary badge--small">10% OFF</span>
+        <spa class="plan__description">Easy start on the cloud</spa>
+      </header>
+      <div class="card__body">
+        <ul class="list list--tick">
+          <li class="list__item">Unlimited Websites</li>
+          <li class="list__item">Unlimited Bandwidth</li>
+          <li class="list__item">150 GB SSD Storage</li>
+          <li class="list__item">6 GB RAM</li>
+          <li class="list__item">3 CPU Core</li>
+        </ul>
+        <button class="btn btn--outline btn--block">Buy Now</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

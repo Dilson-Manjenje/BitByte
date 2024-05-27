@@ -581,3 +581,45 @@ a {
     margin: 0 2rem;
   }
 }
+
+/* COLLAPSIBLE (ACCORDION) */
+
+.collapsible {
+  cursor: pointer;
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(0deg);   /* collapseded */
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  /* cuz cant apply transition to display propertie */
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden; /* cuz heigth is 0 we have overflow*/
+  opacity: 0;
+  /* transition: max-height 0.3s; */
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(180deg);  /* expanded */
+  transition: transform 0.5s;
+}
+
+.collapsible--expanded .collapsible__content {
+  /* display: block; */
+  max-height: 100vh; /* stretch till fit the content, different of heigt  */
+  opacity: 1;
+}

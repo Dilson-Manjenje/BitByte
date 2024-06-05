@@ -10,40 +10,20 @@
   <title>BitByte</title>
 </head>
 <body>  
-  <nav class="nav collapsible">
-    <a href="/"><img src="images/logo.svg" alt=""></a>
-    <svg class="icon icon--white nav__toggler">
-      <use xlink:href="images/sprite.svg#menu"></use>
-    </svg>
-    <ul class="list nav__list collapsible__content">
-      <li class="nav__item"><a href="#">Hospedagem</a></li>
-      <li class="nav__item"><a href="#">VPS</a></li>
-      <li class="nav__item"><a href="#">Domínios</a></li>
-      <li class="nav__item"><a href="#">Preços</a></li>
-    </ul>
-  </nav>
-  <div class="collapsible">
-    <header class="collapsible__header">
-      <h2 class="collapsible__heading">Item 1</h2>
-      <svg class="icon icon--white collapsible__chevron">
-        <use xlink:href="images/sprite2.svg#chevron"></use>
-      </svg>
-    </header>
-    <div class="collapsible__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, mollitia.
-    </div>      
-  </div>  
-  <div class="collapsible">
-    <header class="collapsible__header">
-      <h2 class="collapsible__heading">Item 2</h2>
-      <svg class="icon icon--white collapsible__chevron">
-        <use xlink:href="images/sprite2.svg#chevron"></use>
-      </svg>
-    </header>
-    <div class="collapsible__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, mollitia.
-    </div>      
-  </div>  
+  <section class="block block--dark block--skewed-left hero">
+    <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Hospedagem Cloud para Prós</h1>
+          <p class="hero__tagline">Publique seus websites em menos de 60 segundos.</p>
+          <a href="" class="btn btn--accent btn--stretched">Iniciar</a>
+        </header>
+        <picture>
+          <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+          <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+    </div>
+  </section>
 <script src="js/main.js"></script>
 </body>
 </html>

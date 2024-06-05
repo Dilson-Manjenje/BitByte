@@ -10,29 +10,40 @@
   <title>BitByte</title>
 </head>
 <body>  
-  <section class="block container">
-    <header class="block__header">
-      <h2 class="block__heading">Heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus excepturi dignissimos qui?
-      </p>
+  <nav class="nav collapsible">
+    <a href="/"><img src="images/logo.svg" alt=""></a>
+    <svg class="icon icon--white nav__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Hospedagem</a></li>
+      <li class="nav__item"><a href="#">VPS</a></li>
+      <li class="nav__item"><a href="#">Domínios</a></li>
+      <li class="nav__item"><a href="#">Preços</a></li>
+    </ul>
+  </nav>
+  <div class="collapsible">
+    <header class="collapsible__header">
+      <h2 class="collapsible__heading">Item 1</h2>
+      <svg class="icon icon--white collapsible__chevron">
+        <use xlink:href="images/sprite2.svg#chevron"></use>
+      </svg>
     </header>
-    <div style="width: 30%; padding: 4rem;">
-      <div class="card card--primary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quisquam placeat optio harum beatae
-              dolor!
-          </div>
-      </div>
-    </div>
-  </section>
-  <section class="block block--dark block--skewed-left">
-    <h2 class="block__heading">Heading</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    </p>
-  </section> 
+    <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, mollitia.
+    </div>      
+  </div>  
+  <div class="collapsible">
+    <header class="collapsible__header">
+      <h2 class="collapsible__heading">Item 2</h2>
+      <svg class="icon icon--white collapsible__chevron">
+        <use xlink:href="images/sprite2.svg#chevron"></use>
+      </svg>
+    </header>
+    <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, mollitia.
+    </div>      
+  </div>  
 <script src="js/main.js"></script>
 </body>
 </html>

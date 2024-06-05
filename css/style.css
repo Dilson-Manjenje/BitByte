@@ -9,7 +9,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border:  #CCC;;
-  --border-radius: 30px;
+  --border-radius: 30px;  
 }
 
 *, 
@@ -588,14 +588,15 @@ a {
 }
 
 /* COLLAPSIBLE (ACCORDION) */
-
+/*
 .collapsible {
   cursor: pointer;
-}
+}*/
 
 .collapsible__header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .collapsible__heading {
@@ -661,4 +662,65 @@ a {
 .block--skewed-left {
   clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+/* NAVIGATION BAR */
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* to show the list in the second line*/
+  padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: .5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+/* apply to element that have both classes .nav and .collapsible--expanded*/
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;  
+  box-shadow: 0 0 5px 3px #666;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    /* to ovewritte the max-height of collapsible*/
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }

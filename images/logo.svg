@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="50"
+   viewBox="0 0 52.916664 13.229167"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     style="mix-blend-mode:normal">
+    <text
+       xml:space="preserve"
+       style="font-size:11.1125px;mix-blend-mode:normal;fill:#000000;stroke-width:0.38271;stroke-dasharray:none"
+       x="14.09914"
+       y="10.635614"
+       id="text1"
+       transform="scale(1.0136247,0.98655844)"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1125px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';fill:#ffd700;fill-opacity:1;stroke-width:0.38271;stroke-dasharray:none"
+         x="14.09914"
+         y="10.635614"><tspan
+   style="font-size:11.1125px;fill:#ffffff;fill-opacity:1"
+   id="tspan8">Bit</tspan>BYTE</tspan></text>
+    <g
+       id="g7"
+       transform="rotate(0.15978676,9.6932854,-1700.9764)">
+      <ellipse
+         style="mix-blend-mode:normal;fill:#ffd700;fill-opacity:1;stroke-width:0.230705;stroke-dasharray:none"
+         id="path6"
+         cx="12.074532"
+         cy="6.7431297"
+         rx="4.753974"
+         ry="4.7057123" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.79735px;mix-blend-mode:normal;fill:#000000;stroke-width:0.244049;stroke-dasharray:none"
+         x="9.6156454"
+         y="9.4042015"
+         id="text1-4"
+         transform="scale(1.0160985,0.98415655)"><tspan
+           id="tspan1-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79735px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';fill:#eee400;fill-opacity:1;stroke-width:0.244049;stroke-dasharray:none"
+           x="9.6156454"
+           y="9.4042015"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';fill:#ffffff;fill-opacity:1;stroke-width:0.244049"
+             id="tspan3-1">B</tspan><tspan
+             style="fill:#ffd700;fill-opacity:1;stroke-width:0.244049"
+             id="tspan7-8" /></tspan></text>
+    </g>
+  </g>
+</svg>

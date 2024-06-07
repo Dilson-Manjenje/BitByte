@@ -10,30 +10,73 @@
   <title>BitByte</title>
 </head>
 <body>  
-  <section class="block container block-domain">
-    <header class="block__header">
-      <h2>Apartir de 9$ por mês</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, unde deserunt tempore ex facere eligendi!</p>
-    </header>
-    <div class="input-group">
-      <input type="text"
-             class="input" 
-             placeholder="Enter your domain name..." />
-      <button class="btn btn--accent">
-        <svg class="icon icon--white">
-          <use xlink:href="images/sprite.svg#search"></use>
-        </svg>
-        Search
-      </button>
+  <section class="block container block-plans">
+    <div class="grid grid--1x3">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Individual</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/mês</span>
+            <span class="badge badge--secondary badge--small">5% OFF</span>
+            <span class="plan__description">Iniciar facilmente na cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Websites ilimitados</li>
+              <li class="list__item">Banda ilimitada</li>
+              <li class="list__item">50 GB de Armazenamento</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan plan--popular">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Business</h3>
+            <span class="plan__price">$25</span>
+            <span class="plan__billing-cycle">/mês</span>
+            <span class="badge badge--primary badge--small">10% OFF</span>
+            <span class="plan__description">Seu negócio na cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Websites ilimitados</li>
+              <li class="list__item">Banda ilimitada</li>
+              <li class="list__item">150 GB de Armazenamento</li>
+              <li class="list__item">8 GB RAM</li>
+              <li class="list__item">2 CPU Core</li>
+            </ul>
+            <button class="btn btn--popular btn--block">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Bussiness Plus</h3>
+            <span class="plan__price">$50</span>
+            <span class="plan__billing-cycle">/mês</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Experiência optimizada</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Websites ilimitados</li>
+              <li class="list__item">Banda ilimitada</li>
+              <li class="list__item">200 GB de Armazenamento</li>
+              <li class="list__item">8 GB RAM</li>
+              <li class="list__item">2 CPU Core</li>
+
+            </ul>
+            <button class="btn btn--outline btn--block">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9.26</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>  
-    </ul>
   </section>
   
   <script src="js/main.js"></script>

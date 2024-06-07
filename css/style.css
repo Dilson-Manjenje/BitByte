@@ -356,7 +356,7 @@ a {
 }
 
 .card--primary .badge--primary {
-  background-color: #2a1183;
+  background-color: #126de4;
 }
 
 .card--secondary .badge--secondary {
@@ -366,6 +366,10 @@ a {
 /* PLANS */
 .plan {
   padding: 1rem;
+}
+
+.plan {
+  transition: transform 0.3s ease-out;
 }
 
 .plan__name {
@@ -399,6 +403,10 @@ a {
   margin-bottom: 1.5rem;
 } 
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -410,6 +418,14 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);  
 }
 
 @media  screen and (min-width: 1024px) {
@@ -785,3 +801,14 @@ a {
 
   }
 }
+
+/* PLANS BLOCK */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin:0 auto;
+}
+

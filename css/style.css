@@ -22,6 +22,7 @@
 .container {
   max-width: 1140px;  
   margin: 0 auto;
+  /* min-width: 390px; */
 }
 
 /* TYPOGRAPHY */
@@ -51,11 +52,11 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 4.6rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 
 h3 {
@@ -73,7 +74,7 @@ p {
   }
   
   h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   
   h2 {
@@ -226,7 +227,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -293,6 +294,11 @@ a {
   display: inline-block;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -328,6 +334,7 @@ a {
   border: 0;
   flex-grow: 1; /*grow the input */
   padding: 1.5rem 2rem;
+  width: 0; /* let flex-grow set the width of the input*/
 }
 
 .input-group .btn {
@@ -599,11 +606,6 @@ a {
   align-self: center;
 }
 
-.btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .callout__content {
   text-align: center;
 }
@@ -770,9 +772,16 @@ a {
   width: 100%;
 }
 
+.hero {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 @media screen and (min-width: 768px){
   .hero {
     padding-top: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .hero__content {
@@ -792,9 +801,10 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 6rem); /*to set the height of the rows*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 5rem); /*to set the height of the rows*/
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
@@ -825,7 +835,8 @@ a {
 /* FEATURES BLOCK */
 .feature {
   gap: 4rem 2rem; /* gap: row col*/
-  margin: 12rem 0;
+  margin: 6rem 0;
+  padding: 0 2rem;
 }
 
 .feature:first-of-type {

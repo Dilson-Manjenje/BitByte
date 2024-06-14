@@ -586,8 +586,9 @@ a {
 
 /* CALLOUT */
 .callout {
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 15px;
+  margin: 0 2rem;
 }
 
 .callout--primary {
@@ -971,4 +972,10 @@ a {
     .footer__heading {
       font-size: 1.6rem;
     }
+}
+
+/* Sign-up Callout */
+
+.callout-signup {
+  transform: translateY(4rem);
 }

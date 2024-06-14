@@ -12,6 +12,7 @@
   Criada para prática de construção de websites responsivos usando HTML5 e CSS3, por Dilson Manjenje"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>BitByte - Alojamento in Cloud</title>
 </head>
 
@@ -33,12 +34,12 @@
 
   <section class="block block--dark block--skewed-left">
     <div class="container grid grid--1x2">
-      <header class="block__header hero__content">
+      <header class="block__header hero__content"  data-aos="fade-right">
         <h1 class="block__heading">Alojamento <em>Cloud</em> de maneira fácil...</h1>
         <p class="hero__tagline">Publique seus websites em menos de 1 minuto.</p>
         <a href="" class="btn btn--accent btn--stretched">Iniciar</a>
       </header>
-      <picture>
+      <picture  data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
         <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
         <img class="hero__image" src="images/banner.png" alt="" />
@@ -46,19 +47,18 @@
     </div>
   </section>
 
-  <section class="block container block-domain">
+  <section class="block container block-domain" data-aos="fade-up">
     <header class="block__header">
       <h2>Apartir de 9.000kz</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, unde deserunt tempore ex facere
-        eligendi!</p>
+      <p>Obtenha alojamento para o seu website ao melhor preço...</p>
     </header>
     <div class="input-group">
-      <input type="text" class="input" placeholder="Digite o nome do seu domínio..." />
+      <input type="text" class="input" placeholder="Digite o seu domínio..." />
       <button class="btn btn--accent">
         <svg class="icon icon--white">
           <use xlink:href="images/sprite.svg#search"></use>
         </svg>
-        Search
+        Pesquisar
       </button>
     </div>
     <ul class="list block-domain__prices">
@@ -71,7 +71,7 @@
     </ul>
   </section>
 
-  <section class="block container block-plans">
+  <section class="block container block-plans" data-aos="fade-up">
     <div class="grid grid--1x3">
       <div class="plan">
         <div class="card card--secondary">
@@ -146,7 +146,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis.</p>
     </header>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#easy"></use>
@@ -157,14 +157,14 @@
           dolorum possimus, culpa ab accusamus.</p>
         <a href="#" class="link-arrow">Saber Mais</a>
       </div>
-      <picture>
+      <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
         <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
         <img class="feature__image" src="images/easy@2x.jpg" alt="" />
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-left">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#computer"></use>
@@ -175,14 +175,14 @@
           dignissimos aspernatur quo quos ducimus id quibusdam itaque, quam sunt exercitationem.</p>
         <a href="#" class="link-arrow">Saber Mais</a>
       </div>
-      <picture>
+      <picture data-aos="fade-right">
         <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
         <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
         <img class="feature__image" src="images/fast@2x.jpg" alt="" />
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-right">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -195,14 +195,14 @@
         <p>
           <a href="#" class="link-arrow">Saber Mais</a>
       </div>
-      <picture>
+      <picture data-aos="fade-left">
         <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
         <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
         <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
-      <div class="feature__content">
+      <div class="feature__content" data-aos="fade-left">
         <span class="icon-container">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#clock"></use>
@@ -215,7 +215,7 @@
         <p>
           <a href="#" class="link-arrow">Saber Mais</a>
       </div>
-      <picture>
+      <picture data-aos="fade-right">
         <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
         <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
         <img class="feature__image" src="images/support@2x.jpg" alt="" />
@@ -228,12 +228,12 @@
       <h2>Painel de Controle Intuitivo</h2>
     </header>
     <div class="container grid grid--1x2">
-      <picture class="block-showcase__image">
+      <picture class="block-showcase__image" data-aos="fade-right">
         <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
         <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
         <img src="images/ipad@2x.png" alt="">
       </picture>
-      <ul class="list">
+      <ul class="list" data-aos="fade-left">
         <li>
           <div class="media">
             <div class="media__image">
@@ -285,7 +285,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" data-aos="zoom-in">
     <header class="block__header">
       <h2>O que dizem os nossos Clientes</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, nisi.</p>
@@ -323,14 +323,13 @@
     </div>
   </section>
 
-  <div class="callout callout--primary">
+  <div class="callout callout--primary callout-signup">
     <div class="grid grid--1x2">
       <div class="callout__content">
-        <h2 class="callout__heading">Pronto Para Iniciar?</h2>
-        <p>Nossos Planos de Alojamento lhe permite alavancar o seu negócio gradualmente
-          de forma ágil e segura, não deixe o seu negócio esperar.</p>
+        <h2 class="callout__heading">Porquê esperar?</h2>
+        <p>Armazenamento nas <em>nuvens</em> é a agilidade que o seu negócio precisa...</p>
       </div>
-      <a href="#" class="btn btn--secondary btn--stretched">Iniciar</a>
+      <a href="#" class="btn btn--secondary btn--stretched">Iniciar Agora</a>
     </div>
   </div>
 
@@ -394,6 +393,14 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // AOS.init();
+    AOS.init({
+        // delay: 20,
+        duration: 800
+      });
+  </script>
 </body>
 
 </html>

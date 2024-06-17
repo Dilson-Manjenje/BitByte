@@ -7,25 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Publique seus websites em menos de 1 minuto.">
   
-  <meta
-      property="og:title"
-      content="BitByte - Alojamento nas nuvens de maneira fácil..."
-    />
-  
+  <meta property="og:title" 
+        content="BitByte - Alojamento nas nuvens de maneira fácil...">  
   <meta property="og:description" 
-        content="BitByte é organização ficticia de alojamento nas nuvens. Criada por Dilson Manjenje para prática de construção de websites responsivos usando HTML5 e CSS3"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://bitbyte-demo.netlify.app/logo.png" />
-  <meta property="og:url" content="http://bitbyte-demo.netlify.app/" />
+        content="BitByte é organização ficticia de alojamento nas nuvens, criada por Dilson Manjenje para prática de construção de websites responsivos usando HTML5 e CSS3">
+  <meta property="og:type" content="website" >
+  <meta property="og:image" content="http://bitbyte-demo.netlify.app/images/logo.png">
+  <meta property="og:url" content="http://bitbyte-demo.netlify.app/">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
   <title>BitByte - Alojamento in Cloud</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="nav collapsible">
       <!-- <a href="/"><img src="images/logo.svg" alt=""></a> -->
       <a href="/"><img src="images/logo.png" alt=""></a>
@@ -34,9 +31,10 @@
       </svg>
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#">Alojamento</a></li>
-        <li class="nav__item"><a href="#">VPS</a></li>
-        <li class="nav__item"><a href="#">Domínios</a></li>
-        <li class="nav__item"><a href="#">Preços</a></li>
+        <li class="nav__item"><a href="index.html#dominio-section">Domínios</a></li>
+        <li class="nav__item"><a href="index.html#planos-section">Planos</a></li>
+        <li class="nav__item"><a href="index.html#features-section">Features</a></li>
+        <li class="nav__item"><a href="index.html#suporte-section">Suporte</a></li>
       </ul>
     </nav>
   </header>
@@ -51,18 +49,18 @@
       <picture  data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
         <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
-        <img class="hero__image" src="images/banner.png" alt="" />
+        <img class="hero__image" src="images/banner.png" alt="" >
       </picture>
     </div>
   </section>
 
-  <section class="block container block-domain" data-aos="fade-up">
+  <section id="dominio-section" class="block container block-domain" data-aos="fade-up">
     <header class="block__header">
       <h2>Apartir de 9.000kz</h2>
       <p>Obtenha alojamento para o seu website ao melhor preço...</p>
     </header>
     <div class="input-group">
-      <input type="text" class="input" placeholder="Digite o seu domínio..." />
+      <input type="text" class="input" placeholder="Digite o seu domínio..."  >
       <button class="btn btn--accent">
         <svg class="icon icon--white">
           <use xlink:href="images/sprite.svg#search"></use>
@@ -71,16 +69,16 @@
       </button>
     </div>
     <ul class="list block-domain__prices">
-      <li><span class="badge">.com 12k</span></li>
-      <li><span class="badge">.co.ao 10k</span></li>
-      <li><span class="badge">.space 11k</span></li>
-      <li><span class="badge">.info 14k</span></li>
-      <li><span class="badge">.net 10k</span></li>
-      <li><span class="badge">.me  9k</span></li>
+      <li><span class="badge">.com</span></li>
+      <li><span class="badge">.co.ao</span></li>
+      <li><span class="badge">.info</span></li>
+      <li><span class="badge">.net</span></li>
+      <li><span class="badge">.it</span></li>
+      <li><span class="badge">.me</span></li>
     </ul>
   </section>
 
-  <section class="block container block-plans" data-aos="fade-up">
+  <section id="planos-section" class="block container block-plans" data-aos="fade-up">
     <div class="grid grid--1x3">
       <div class="plan">
         <div class="card card--secondary">
@@ -93,9 +91,8 @@
           </header>
           <div class="card__body">
             <ul class="list list--tick">
-              <li class="list__item">Websites ilimitados</li>
-              <li class="list__item">Banda ilimitada</li>
-              <li class="list__item">50 GB de Armazenamento</li>
+              <li class="list__item">10 Websites</li>
+              <li class="list__item">50 GB de Espaço</li>
               <li class="list__item">3 GB RAM</li>
             </ul>
             <button class="btn btn--outline btn--block">Comprar Agora</button>
@@ -113,10 +110,9 @@
           </header>
           <div class="card__body">
             <ul class="list list--tick">
-              <li class="list__item">Websites ilimitados</li>
-              <li class="list__item">Banda ilimitada</li>
-              <li class="list__item">150 GB de Armazenamento</li>
-              <li class="list__item">8 GB RAM</li>
+              <li class="list__item">50 Websites</li>
+              <li class="list__item">150 GB de Espaço</li>
+              <li class="list__item">3 GB RAM</li>
               <li class="list__item">2 CPU Core</li>
             </ul>
             <button class="btn btn--popular btn--block">Comprar Agora</button>
@@ -136,8 +132,7 @@
           <div class="card__body">
             <ul class="list list--tick">
               <li class="list__item">Websites ilimitados</li>
-              <li class="list__item">Banda ilimitada</li>
-              <li class="list__item">200 GB de Armazenamento</li>
+              <li class="list__item">300 GB de Espaço</li>
               <li class="list__item">8 GB RAM</li>
               <li class="list__item">2 CPU Core</li>
 
@@ -149,7 +144,7 @@
     </div>
   </section>
 
-  <section class="block container">
+  <section id="features-section" class="block container">
     <header class="block__header">
       <h2>Evolua seu negócio com alojamento nas nuvens</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis.</p>
@@ -169,7 +164,7 @@
       <picture data-aos="zoom-in-left">
         <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
         <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
-        <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+        <img class="feature__image" src="images/easy@2x.jpg" alt="" >
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
@@ -187,7 +182,7 @@
       <picture data-aos="fade-right">
         <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
         <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
-        <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+        <img class="feature__image" src="images/fast@2x.jpg" alt="" >
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
@@ -207,7 +202,7 @@
       <picture data-aos="fade-left">
         <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
         <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
-        <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
+        <img class="feature__image" src="images/wordpress@2x.jpg" alt="" >
       </picture>
     </article>
     <article class="grid grid--1x2 feature">
@@ -227,7 +222,7 @@
       <picture data-aos="fade-right">
         <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
         <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
-        <img class="feature__image" src="images/support@2x.jpg" alt="" />
+        <img class="feature__image" src="images/support@2x.jpg" alt="" >
       </picture>
     </article>
   </section>
@@ -303,7 +298,7 @@
       <div class="card testimonial">
         <div class="grid grid--1x2">
           <div class="testimonial__image">
-            <img src="images/testimonial.jpg" alt="cliente feliz e sorridente" />
+            <img src="images/testimonial.jpg" alt="cliente feliz e sorridente" >
             <span class="icon-container icon-container--accent">
               <svg class="icon icon--white icon--small">
                 <use xlink:href="images/sprite.svg#quotes"></use>
@@ -342,15 +337,15 @@
     </div>
   </div>
 
-  <footer class="block block--dark footer">
+  <footer id="footer-section" class="block block--dark footer">
     <div class="container grid footer__sections">
       <section class="collapsible collapsible--expanded footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Produtos</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Alojamento WordPress</a></li>
@@ -361,12 +356,12 @@
         </div>
       </section>
       <section class="collapsible footer__section">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Organização</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul class="list">
             <li><a href="#">Sobre Nós</a></li>
@@ -377,13 +372,13 @@
           </ul>
         </div>
       </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header">
+      <section id="suporte-section" class="collapsible footer__section">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading footer__heading">Suporte</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
-        </header>
+        </div>
         <div class="collapsible__content">
           <div class="collapsible__content">
             <ul class="list">
@@ -395,10 +390,17 @@
           </div>
         </div>
       </section>
-      <section class="footer__brand">
+      <div class="footer__brand">
         <a href="/"><img src="images/logo.svg" alt=""></a>
         <p class="footer__copyright">Copyright &copy; 2024 Dilson Manjenje</p>
-      </section>
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="CSS válido!" />
+              </a>
+        </p>                  
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
